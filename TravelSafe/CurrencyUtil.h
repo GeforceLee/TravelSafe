@@ -9,7 +9,7 @@
 #import <Foundation/Foundation.h>
 
 
-typedef void (^currencyResultBlock)(NSDictionary *result,NSError *error);
+#import "CommonDefine.h"
 @interface CurrencyUtil : NSObject
 + (NSArray *)supportCurrencyTypes;
 

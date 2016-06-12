@@ -9,5 +9,7 @@ target 'TravelSafe' do
   # Pods for TravelSafe
   pod 'AFNetworking', '~>3.0'
   pod 'SDWebImage', '~>3.7.6'
+  pod 'RongCloudIMKitWithVoip', '2.6.2'
+  pod 'FCUUID'
 end
 

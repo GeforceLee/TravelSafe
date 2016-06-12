@@ -7,7 +7,6 @@
 //
 
 #import "CurrencyUtil.h"
-#import "APIKeys.h"
 #import "APIStoreSDK.h"
 #import "ErrorMaker.h"
 @implementation CurrencyUtil
@@ -21,7 +20,7 @@
     
     if([[CurrencyUtil supportCurrencyTypes] indexOfObject:from]!= -1 || [[CurrencyUtil supportCurrencyTypes] indexOfObject:to]!= -1){
         NSError *error;
-        block(nil,error);
+        return block(nil,error);
     }
     
     
@@ -35,14 +34,14 @@
             if (dict) {
                 block(dict,nil);
             }else {
-                NSError *error = [ErrorMaker createError];
+                NSError *error = [ErrorMaker createThirdError:@""];
                 block(nil,error);
             }
         }
     };
     
     callBack.onError = ^(long status, NSString* responseString) {
-        NSError *error = [ErrorMaker createError];
+        NSError *error = [ErrorMaker createThirdError:@""];
         block(nil,error);
         
     };

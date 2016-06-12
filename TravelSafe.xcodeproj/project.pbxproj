@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4B614BE31D0D448800A26822 /* HttpManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B614BE21D0D448800A26822 /* HttpManager.m */; };
+		4B614BE71D0D4CB800A26822 /* AppManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B614BE61D0D4CB800A26822 /* AppManager.m */; };
+		4B614BEA1D0D502600A26822 /* CommonUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B614BE91D0D502600A26822 /* CommonUtil.m */; };
 		4BFB60B61D0064CF006F9167 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4BFB60B51D0064CF006F9167 /* main.m */; };
 		4BFB60B91D0064CF006F9167 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4BFB60B81D0064CF006F9167 /* AppDelegate.m */; };
 		4BFB60BC1D0064CF006F9167 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4BFB60BB1D0064CF006F9167 /* ViewController.m */; };
@@ -41,6 +44,13 @@
 
 /* Begin PBXFileReference section */
 		25FB4A876612052F9A0F9CE0 /* libPods-TravelSafe.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TravelSafe.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4B614BE11D0D448800A26822 /* HttpManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HttpManager.h; sourceTree = "<group>"; };
+		4B614BE21D0D448800A26822 /* HttpManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HttpManager.m; sourceTree = "<group>"; };
+		4B614BE41D0D497300A26822 /* CommonDefine.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CommonDefine.h; sourceTree = "<group>"; };
+		4B614BE51D0D4CB800A26822 /* AppManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppManager.h; sourceTree = "<group>"; };
+		4B614BE61D0D4CB800A26822 /* AppManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppManager.m; sourceTree = "<group>"; };
+		4B614BE81D0D502600A26822 /* CommonUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CommonUtil.h; sourceTree = "<group>"; };
+		4B614BE91D0D502600A26822 /* CommonUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CommonUtil.m; sourceTree = "<group>"; };
 		4BFB60B11D0064CF006F9167 /* TravelSafe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TravelSafe.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4BFB60B51D0064CF006F9167 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		4BFB60B71D0064CF006F9167 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -60,7 +70,6 @@
 		61D88FBE6EA2D6B0BBD9CD74 /* Pods-TravelSafe.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TravelSafe.release.xcconfig"; path = "Pods/Target Support Files/Pods-TravelSafe/Pods-TravelSafe.release.xcconfig"; sourceTree = "<group>"; };
 		81277CC01D015E95006F3880 /* CurrencyUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CurrencyUtil.h; sourceTree = "<group>"; };
 		81277CC11D015E95006F3880 /* CurrencyUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CurrencyUtil.m; sourceTree = "<group>"; };
-		81277CC31D0160AB006F3880 /* APIKeys.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = APIKeys.h; sourceTree = "<group>"; };
 		81277CC61D0162D5006F3880 /* APIStoreSDK */ = {isa = PBXFileReference; lastKnownFileType = folder; name = APIStoreSDK; path = TravelSafe/APIStoreSDK; sourceTree = "<group>"; };
 		81277CC91D017229006F3880 /* ErrorMaker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ErrorMaker.h; sourceTree = "<group>"; };
 		81277CCA1D017229006F3880 /* ErrorMaker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ErrorMaker.m; sourceTree = "<group>"; };
@@ -139,8 +148,8 @@
 		4BFB60B41D0064CF006F9167 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				4B614BE41D0D497300A26822 /* CommonDefine.h */,
 				4BFB60B51D0064CF006F9167 /* main.m */,
-				81277CC31D0160AB006F3880 /* APIKeys.h */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -195,6 +204,12 @@
 			children = (
 				81277CC91D017229006F3880 /* ErrorMaker.h */,
 				81277CCA1D017229006F3880 /* ErrorMaker.m */,
+				4B614BE11D0D448800A26822 /* HttpManager.h */,
+				4B614BE21D0D448800A26822 /* HttpManager.m */,
+				4B614BE51D0D4CB800A26822 /* AppManager.h */,
+				4B614BE61D0D4CB800A26822 /* AppManager.m */,
+				4B614BE81D0D502600A26822 /* CommonUtil.h */,
+				4B614BE91D0D502600A26822 /* CommonUtil.m */,
 			);
 			name = Util;
 			sourceTree = "<group>";
@@ -221,6 +236,7 @@
 				4BFB60AF1D0064CF006F9167 /* Resources */,
 				6CBC1F48FE514CDE625B9DF7 /* [CP] Embed Pods Frameworks */,
 				0FFC3EA6C29020E07A3DC679 /* [CP] Copy Pods Resources */,
+				2EB30D22E2172DA507ABEFC4 /* Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -353,6 +369,21 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TravelSafe/Pods-TravelSafe-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
+		2EB30D22E2172DA507ABEFC4 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TravelSafe/Pods-TravelSafe-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		5A55A8854FCC08CE7D5B290D /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -393,7 +424,10 @@
 				4BFB60BC1D0064CF006F9167 /* ViewController.m in Sources */,
 				4BFB60B91D0064CF006F9167 /* AppDelegate.m in Sources */,
 				81277CCB1D017229006F3880 /* ErrorMaker.m in Sources */,
+				4B614BE31D0D448800A26822 /* HttpManager.m in Sources */,
 				81277CC21D015E95006F3880 /* CurrencyUtil.m in Sources */,
+				4B614BE71D0D4CB800A26822 /* AppManager.m in Sources */,
+				4B614BEA1D0D502600A26822 /* CommonUtil.m in Sources */,
 				4BFB60B61D0064CF006F9167 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

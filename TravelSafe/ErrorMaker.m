@@ -11,10 +11,25 @@
 #define ERROR_DOMAIN @"com.ezutrip.travelsafe"
 
 @implementation ErrorMaker
-+ (NSError *)createError{
+
++ (NSError *)createErrorWithCode:(NSInteger) code withDesc:(NSString *)desc{
     NSDictionary *dict = [[NSDictionary alloc] init];
-    
-    NSError *error = [NSError alloc] initWithDomain:ERROR_DOMAIN [code: userInfo:dict];
+    [dict setValue:desc forKey:ErrorCodeDesc];
+    NSError *error = [[NSError alloc] initWithDomain:ERROR_DOMAIN code:code userInfo:dict];
     return error;
 }
+
+
++ (NSError *)createThirdError:(NSString *)desc{
+    return [ErrorMaker createErrorWithCode:TSErrorTypeThird withDesc:desc];
+}
+
+@end
+
+@implementation NSError(CodeAndDesc)
+
+- (NSString *)errorDescription{
+    return [self.userInfo objectForKey:ErrorCodeDesc];
+}
+
 @end

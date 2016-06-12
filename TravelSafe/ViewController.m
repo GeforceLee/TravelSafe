@@ -8,6 +8,7 @@
 
 #import "ViewController.h"
 #import "CurrencyUtil.h"
+#import "HttpManager.h"
 @interface ViewController ()
 
 @end
@@ -17,8 +18,8 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
-    
-    [CurrencyUtil currencyFrom:@"USD" to:@"CNY" amount:1 result:^(float curent, NSError *error) {
+    [HttpManager sharedHttpManager];
+    [CurrencyUtil currencyFrom:@"USD" to:@"CNY" amount:1 result:^(NSDictionary *result, NSError *error) {
         if (error) {
             
         }else{

@@ -13,6 +13,6 @@
 @interface CurrencyUtil : NSObject
 + (NSArray *)supportCurrencyTypes;
 
-+ (void)currencyFrom:(NSString *)from to:(NSString *)to amount:(float)amount result:(currencyResultBlock)block;
++ (void)currencyFrom:(NSString *)from to:(NSString *)to amount:(float)amount result:(handleResultBlock)block;
 
 @end

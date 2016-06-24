@@ -10,9 +10,30 @@
 #import "AFNetworking.h"
 #import "CommonDefine.h"
 @interface HttpManager : AFHTTPSessionManager
+
+/**
+ *  获得单例的 HttpManager
+ *
+ *  @return HttpManager
+ */
 + (HttpManager *)sharedHttpManager;
 
- 
-- (void)get:(NSString *)path withParam:(NSDictionary *)param andResult:(currencyResultBlock)result;
 
+/**
+ *  GET请求
+ *
+ *  @param path   路径
+ *  @param param  参数
+ *  @param result 处理返回结果的block
+ */
+- (void)get:(NSString *)path withParam:(NSDictionary *)param andResult:(handleResultBlock)result;
+
+/**
+ *  POST请求
+ *
+ *  @param path   路径
+ *  @param param  参数
+ *  @param result 处理返回结果的block
+ */
+- (void)post:(NSString *)path withParam:(NSDictionary *)param andResult:(handleResultBlock)result;
 @end

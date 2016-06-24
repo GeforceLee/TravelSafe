@@ -15,7 +15,7 @@
 }
 
 
-+ (void)currencyFrom:(NSString *)from to:(NSString *)to amount:(float)amount result:(currencyResultBlock)block{
++ (void)currencyFrom:(NSString *)from to:(NSString *)to amount:(float)amount result:(handleResultBlock)block{
     
     
     if([[CurrencyUtil supportCurrencyTypes] indexOfObject:from]!= -1 || [[CurrencyUtil supportCurrencyTypes] indexOfObject:to]!= -1){

@@ -13,7 +13,7 @@
 @implementation ErrorMaker
 
 + (NSError *)createErrorWithCode:(NSInteger) code withDesc:(NSString *)desc{
-    NSDictionary *dict = [[NSDictionary alloc] init];
+    NSMutableDictionary *dict = [[NSMutableDictionary alloc] init];
     [dict setValue:desc forKey:ErrorCodeDesc];
     NSError *error = [[NSError alloc] initWithDomain:ERROR_DOMAIN code:code userInfo:dict];
     return error;

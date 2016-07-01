@@ -7,22 +7,23 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		11B76C276B2B0A96DF87A9DF /* libPods-TravelSafe.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5514FFDFE64452CE212CDB77 /* libPods-TravelSafe.a */; };
 		4B614BE31D0D448800A26822 /* HttpManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B614BE21D0D448800A26822 /* HttpManager.m */; };
 		4B614BE71D0D4CB800A26822 /* AppManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B614BE61D0D4CB800A26822 /* AppManager.m */; };
 		4B614BEA1D0D502600A26822 /* CommonUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B614BE91D0D502600A26822 /* CommonUtil.m */; };
 		4BFB60B61D0064CF006F9167 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4BFB60B51D0064CF006F9167 /* main.m */; };
 		4BFB60B91D0064CF006F9167 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4BFB60B81D0064CF006F9167 /* AppDelegate.m */; };
-		4BFB60BC1D0064CF006F9167 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4BFB60BB1D0064CF006F9167 /* ViewController.m */; };
 		4BFB60BF1D0064CF006F9167 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4BFB60BD1D0064CF006F9167 /* Main.storyboard */; };
 		4BFB60C11D0064CF006F9167 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4BFB60C01D0064CF006F9167 /* Assets.xcassets */; };
 		4BFB60C41D0064CF006F9167 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4BFB60C21D0064CF006F9167 /* LaunchScreen.storyboard */; };
 		4BFB60CF1D0064CF006F9167 /* TravelSafeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4BFB60CE1D0064CF006F9167 /* TravelSafeTests.m */; };
 		4BFB60DA1D0064CF006F9167 /* TravelSafeUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4BFB60D91D0064CF006F9167 /* TravelSafeUITests.m */; };
+		5DEE10CF1D2648060075B9E1 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DEE10CD1D2648060075B9E1 /* LoginViewController.m */; };
+		5DEE10E01D265B010075B9E1 /* MainTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DEE10DE1D265B010075B9E1 /* MainTabBarController.m */; };
 		81277CC21D015E95006F3880 /* CurrencyUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 81277CC11D015E95006F3880 /* CurrencyUtil.m */; };
 		81277CC71D0162D5006F3880 /* APIStoreSDK in Resources */ = {isa = PBXBuildFile; fileRef = 81277CC61D0162D5006F3880 /* APIStoreSDK */; };
 		81277CCB1D017229006F3880 /* ErrorMaker.m in Sources */ = {isa = PBXBuildFile; fileRef = 81277CCA1D017229006F3880 /* ErrorMaker.m */; };
 		81277CCD1D017921006F3880 /* libAPIStoreSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 81277CCC1D017921006F3880 /* libAPIStoreSDK.a */; };
-		8EC3A387861B3FD59D990E1F /* libPods-TravelSafe.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 25FB4A876612052F9A0F9CE0 /* libPods-TravelSafe.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,7 +44,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		25FB4A876612052F9A0F9CE0 /* libPods-TravelSafe.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TravelSafe.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4B614BE11D0D448800A26822 /* HttpManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HttpManager.h; sourceTree = "<group>"; };
 		4B614BE21D0D448800A26822 /* HttpManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HttpManager.m; sourceTree = "<group>"; };
 		4B614BE41D0D497300A26822 /* CommonDefine.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CommonDefine.h; sourceTree = "<group>"; };
@@ -55,8 +55,6 @@
 		4BFB60B51D0064CF006F9167 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		4BFB60B71D0064CF006F9167 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		4BFB60B81D0064CF006F9167 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		4BFB60BA1D0064CF006F9167 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		4BFB60BB1D0064CF006F9167 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		4BFB60BE1D0064CF006F9167 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		4BFB60C01D0064CF006F9167 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4BFB60C31D0064CF006F9167 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -67,14 +65,19 @@
 		4BFB60D51D0064CF006F9167 /* TravelSafeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TravelSafeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4BFB60D91D0064CF006F9167 /* TravelSafeUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TravelSafeUITests.m; sourceTree = "<group>"; };
 		4BFB60DB1D0064CF006F9167 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		61D88FBE6EA2D6B0BBD9CD74 /* Pods-TravelSafe.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TravelSafe.release.xcconfig"; path = "Pods/Target Support Files/Pods-TravelSafe/Pods-TravelSafe.release.xcconfig"; sourceTree = "<group>"; };
+		5514FFDFE64452CE212CDB77 /* libPods-TravelSafe.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TravelSafe.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5DEE10CC1D2648060075B9E1 /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
+		5DEE10CD1D2648060075B9E1 /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
+		5DEE10DD1D265B010075B9E1 /* MainTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainTabBarController.h; sourceTree = "<group>"; };
+		5DEE10DE1D265B010075B9E1 /* MainTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainTabBarController.m; sourceTree = "<group>"; };
 		81277CC01D015E95006F3880 /* CurrencyUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CurrencyUtil.h; sourceTree = "<group>"; };
 		81277CC11D015E95006F3880 /* CurrencyUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CurrencyUtil.m; sourceTree = "<group>"; };
 		81277CC61D0162D5006F3880 /* APIStoreSDK */ = {isa = PBXFileReference; lastKnownFileType = folder; name = APIStoreSDK; path = TravelSafe/APIStoreSDK; sourceTree = "<group>"; };
 		81277CC91D017229006F3880 /* ErrorMaker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ErrorMaker.h; sourceTree = "<group>"; };
 		81277CCA1D017229006F3880 /* ErrorMaker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ErrorMaker.m; sourceTree = "<group>"; };
 		81277CCC1D017921006F3880 /* libAPIStoreSDK.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libAPIStoreSDK.a; path = TravelSafe/APIStoreSDK/libAPIStoreSDK.a; sourceTree = "<group>"; };
-		E6B190B598EA3C370FA89D9B /* Pods-TravelSafe.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TravelSafe.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TravelSafe/Pods-TravelSafe.debug.xcconfig"; sourceTree = "<group>"; };
+		A1F9E8EE4A7BCE5CD5E365AC /* Pods-TravelSafe.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TravelSafe.release.xcconfig"; path = "Pods/Target Support Files/Pods-TravelSafe/Pods-TravelSafe.release.xcconfig"; sourceTree = "<group>"; };
+		D4C540B9E4FBFB6C8C59DDBC /* Pods-TravelSafe.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TravelSafe.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TravelSafe/Pods-TravelSafe.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,7 +86,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				81277CCD1D017921006F3880 /* libAPIStoreSDK.a in Frameworks */,
-				8EC3A387861B3FD59D990E1F /* libPods-TravelSafe.a in Frameworks */,
+				11B76C276B2B0A96DF87A9DF /* libPods-TravelSafe.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -108,6 +111,8 @@
 			isa = PBXGroup;
 			children = (
 				4B5B00711D1BD54A00137061 /* UserCenter */,
+				5DEE10DD1D265B010075B9E1 /* MainTabBarController.h */,
+				5DEE10DE1D265B010075B9E1 /* MainTabBarController.m */,
 			);
 			name = UI;
 			sourceTree = "<group>";
@@ -115,6 +120,8 @@
 		4B5B00711D1BD54A00137061 /* UserCenter */ = {
 			isa = PBXGroup;
 			children = (
+				5DEE10CC1D2648060075B9E1 /* LoginViewController.h */,
+				5DEE10CD1D2648060075B9E1 /* LoginViewController.m */,
 			);
 			name = UserCenter;
 			sourceTree = "<group>";
@@ -126,8 +133,8 @@
 				4BFB60CD1D0064CF006F9167 /* TravelSafeTests */,
 				4BFB60D81D0064CF006F9167 /* TravelSafeUITests */,
 				4BFB60B21D0064CF006F9167 /* Products */,
-				7FB9479A8834E98EF8655BF8 /* Pods */,
 				CED264B29F3E1F5D9B225F1C /* Frameworks */,
+				D60F4F8164958F73168685FF /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -150,8 +157,6 @@
 				81277CBA1D012742006F3880 /* Third */,
 				4BFB60B71D0064CF006F9167 /* AppDelegate.h */,
 				4BFB60B81D0064CF006F9167 /* AppDelegate.m */,
-				4BFB60BA1D0064CF006F9167 /* ViewController.h */,
-				4BFB60BB1D0064CF006F9167 /* ViewController.m */,
 				4BFB60BD1D0064CF006F9167 /* Main.storyboard */,
 				4BFB60C01D0064CF006F9167 /* Assets.xcassets */,
 				4BFB60C21D0064CF006F9167 /* LaunchScreen.storyboard */,
@@ -186,15 +191,6 @@
 				4BFB60DB1D0064CF006F9167 /* Info.plist */,
 			);
 			path = TravelSafeUITests;
-			sourceTree = "<group>";
-		};
-		7FB9479A8834E98EF8655BF8 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				E6B190B598EA3C370FA89D9B /* Pods-TravelSafe.debug.xcconfig */,
-				61D88FBE6EA2D6B0BBD9CD74 /* Pods-TravelSafe.release.xcconfig */,
-			);
-			name = Pods;
 			sourceTree = "<group>";
 		};
 		81277CBA1D012742006F3880 /* Third */ = {
@@ -234,9 +230,18 @@
 			isa = PBXGroup;
 			children = (
 				81277CCC1D017921006F3880 /* libAPIStoreSDK.a */,
-				25FB4A876612052F9A0F9CE0 /* libPods-TravelSafe.a */,
+				5514FFDFE64452CE212CDB77 /* libPods-TravelSafe.a */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D60F4F8164958F73168685FF /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D4C540B9E4FBFB6C8C59DDBC /* Pods-TravelSafe.debug.xcconfig */,
+				A1F9E8EE4A7BCE5CD5E365AC /* Pods-TravelSafe.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -252,7 +257,6 @@
 				4BFB60AF1D0064CF006F9167 /* Resources */,
 				6CBC1F48FE514CDE625B9DF7 /* [CP] Embed Pods Frameworks */,
 				0FFC3EA6C29020E07A3DC679 /* [CP] Copy Pods Resources */,
-				2EB30D22E2172DA507ABEFC4 /* Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -385,21 +389,6 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TravelSafe/Pods-TravelSafe-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		2EB30D22E2172DA507ABEFC4 /* Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TravelSafe/Pods-TravelSafe-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		5A55A8854FCC08CE7D5B290D /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -437,11 +426,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4BFB60BC1D0064CF006F9167 /* ViewController.m in Sources */,
 				4BFB60B91D0064CF006F9167 /* AppDelegate.m in Sources */,
 				81277CCB1D017229006F3880 /* ErrorMaker.m in Sources */,
 				4B614BE31D0D448800A26822 /* HttpManager.m in Sources */,
 				81277CC21D015E95006F3880 /* CurrencyUtil.m in Sources */,
+				5DEE10CF1D2648060075B9E1 /* LoginViewController.m in Sources */,
+				5DEE10E01D265B010075B9E1 /* MainTabBarController.m in Sources */,
 				4B614BE71D0D4CB800A26822 /* AppManager.m in Sources */,
 				4B614BEA1D0D502600A26822 /* CommonUtil.m in Sources */,
 				4BFB60B61D0064CF006F9167 /* main.m in Sources */,
@@ -583,7 +573,7 @@
 		};
 		4BFB60DF1D0064CF006F9167 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = E6B190B598EA3C370FA89D9B /* Pods-TravelSafe.debug.xcconfig */;
+			baseConfigurationReference = D4C540B9E4FBFB6C8C59DDBC /* Pods-TravelSafe.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
@@ -611,7 +601,7 @@
 		};
 		4BFB60E01D0064CF006F9167 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 61D88FBE6EA2D6B0BBD9CD74 /* Pods-TravelSafe.release.xcconfig */;
+			baseConfigurationReference = A1F9E8EE4A7BCE5CD5E365AC /* Pods-TravelSafe.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";

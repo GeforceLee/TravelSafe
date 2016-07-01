@@ -37,12 +37,9 @@ static HttpManager *_httpManager;
 + (HttpManager *)sharedHttpManager{
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
-        
         _httpManager = [[HttpManager alloc] initWithBaseURL:[NSURL URLWithString:ServerURL]];
         _httpManager.securityPolicy = [AFSecurityPolicy policyWithPinningMode:AFSSLPinningModeNone];
-        
         [_httpManager.requestSerializer setValue:[HttpManager makeUserAgent] forHTTPHeaderField:@"User-Agent"];
-        DebugLog(@"%@",[HttpManager makeUserAgent]);
         [_httpManager.requestSerializer setValue:@"" forHTTPHeaderField:@"Authorization"];
     });
     return _httpManager;
@@ -58,7 +55,7 @@ static HttpManager *_httpManager;
     }];
 }
 - (void)post:(NSString *)path withParam:(NSDictionary *)param andResult:(handleResultBlock)result{
-    [_httpManager GET:path parameters:param progress:nil success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
+    [_httpManager POST:path parameters:param progress:nil success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
         [self handleServerReturnMethod:@"POST" andPath:path andParam:param andHandleResultBlock:result andResultData:responseObject andError:nil];
     } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
         [self handleServerReturnMethod:@"POST" andPath:path andParam:param andHandleResultBlock:result andResultData:nil andError:error];
@@ -87,8 +84,20 @@ static HttpManager *_httpManager;
     id resultData = nil;
     NSError *resultError = nil;
     if (error) {
-            DebugLog(@"返回结果错误!---------!:%@",error);
-        resultError = error;
+        NSData *data = error.userInfo[AFNetworkingOperationFailingURLResponseDataErrorKey];
+        if (data) {
+            NSDictionary *errorDict = [NSJSONSerialization JSONObjectWithData:data options:NSJSONReadingMutableContainers error:nil];
+            if (errorDict) {
+                resultError = [ErrorMaker createErrorWithCode:[errorDict[@"code"] integerValue] withDesc:errorDict[@"error_description"]];
+            }else {
+                resultError = [ErrorMaker createErrorWithCode:-1 withDesc:@"网络错误"];
+            }
+        }else {
+            resultError = [ErrorMaker createErrorWithCode:-1 withDesc:@"网络错误"];
+        }
+        
+        block(nil,resultError);
+        DebugLog(@"返回结果错误!---------!:%@",resultError);
     }else {
         NSDictionary *json = data;
         int code = [[json objectForKey:@"code"] intValue];

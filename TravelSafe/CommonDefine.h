@@ -22,7 +22,7 @@ typedef void (^handleResultBlock)(id result,NSError *error);
 
 #ifdef DEBUG
 #define DebugLog(s, ...) NSLog(s, ##__VA_ARGS__)
-#define ServerURL @""
+#define ServerURL @"http://ngrok.zhangxd.cn/"
 #define HttpLog 1
 
 
